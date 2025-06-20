@@ -2,11 +2,18 @@
 name = "breba-proxy"
 version = "0.1.0"
 description = "FastAPI app with wildcard subdomain support"
+
+authors = [{ name = "Yason Khaburzaniya", email = "yason@hey.com" }]
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+
 dependencies = [
     "fastapi",
-    "uvicorn"
+    "uvicorn",
+    "google-cloud-storage",
+    "python-dotenv>=1.1.0",
 ]
 
 [tool.uv]
-
 
