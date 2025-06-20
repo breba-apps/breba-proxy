@@ -1,0 +1,12 @@
+[project]
+name = "breba-proxy"
+version = "0.1.0"
+description = "FastAPI app with wildcard subdomain support"
+dependencies = [
+    "fastapi",
+    "uvicorn"
+]
+
+[tool.uv]
+
+
