@@ -1,24 +1,14 @@
 import logging
 import os
-from pathlib import Path
 
 from dotenv import load_dotenv
 from fastapi import FastAPI, Request, HTTPException, Response
 from google.cloud import storage
 
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-
-for file in Path('.').iterdir():
-    if file.is_file():
-        logger.info(file.name)
-
 load_dotenv()
-
-for key, value in os.environ.items():
-    logger.info(f"{key}={value}")
 
 PUBLIC_BUCKET = os.getenv("PUBLIC_BUCKET")
 if not PUBLIC_BUCKET:
