@@ -11,8 +11,8 @@ license = { text = "MIT" }
 dependencies = [
     "fastapi",
     "uvicorn",
-    "google-cloud-storage",
     "python-dotenv>=1.1.0",
+    "boto3>=1.40.27",
 ]
 
 [tool.uv]
